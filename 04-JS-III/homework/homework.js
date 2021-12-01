@@ -232,12 +232,9 @@ function breakStatement(numero) {
     array.push(numero)
     i=i+1
     if(i===numero) break
+  } if (i<10){
     return 'Se interrumpió la ejecución'
-
-    
-    
-
-  } 
+  }else return array
 }
 
 
