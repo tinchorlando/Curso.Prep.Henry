@@ -1,0 +1,2 @@
+Arrays: Un Array o arreglo es un tipo de variable el cual puede contener de manera numericamente ordenada (posiciones 0, 1, 2, etc) un conjunto de datos de distintos tipos
+Un array puede contener otros arrays en su interior, asi como todo tipo de variable, funcion, objetos, etc.

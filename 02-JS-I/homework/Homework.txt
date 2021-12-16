@@ -1,0 +1,9 @@
+Variables: es un elemento dentro del cual se almacena un valor. Dicho valor puede ser un numero, una palabra, una constante
+
+String: Es un tipo de variable el cual cuenta con un conjunto de caracteres en formato de texto. Se define entre apostrofes o comillas y puede tener como caracteres a letras, numeros y signos
+
+Funciones: Son elementos que se utilizan dentro del código para llamar a realizar procesos previamente definidos con un objetivo concreto. Puede tomar argumentos en su llamada, definir variables locales y devolver un resultado
+
+Declaraciones if: Es una declaracion definida en la cual se establece una condicion para ejecutar o no una linea de codigo en funcion a valores de otras variables
+
+Valores booleanos: es un tipo de variable el cual cuenta con dos posibles valores, 'verdadero' = 'true' y 'falso'='false' que se utiliza para operaciones lógicas.

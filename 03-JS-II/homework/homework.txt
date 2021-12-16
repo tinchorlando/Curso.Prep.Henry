@@ -1,0 +1,8 @@
+For: es una declaracion de un bucle, el cual, mientras se cumpla una condicion definida inicialmente, se repetira la ejecucion de un comando determinado
+
+&&: es un elemento que se utiliza dentro de condicionantes (declaracion if) para indicar que dos o mas condiciones tienen que cumplirse al mismo tiempo
+
+||: es un elemento que se utiliza dentro de condicionantes (declaracion if) para indicar que una de dos o mas condiciones deben cumplirse para ejecutarse un codigo
+
+!: es un elemento denominado NOT el cual representa lo opuesto a lo que el siguiente elemento indique. Ejemplo '!=' representa distinto o desigual.
+
