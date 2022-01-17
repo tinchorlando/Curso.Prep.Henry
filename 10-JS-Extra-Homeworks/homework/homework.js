@@ -23,21 +23,35 @@ function numberOfCharacters(string) {
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí 
   var objeto ={}
+  var medio =false
+
   for (let i=0;i<string.length;i++){
-    for(clave in objeto){
-      if ( clave==string(i)){
-        objeto[string(i)] = objeto[string(i)]+1
-      } else objeto[string(i)]=1
+    for (let clave in objeto){
+      if (clave == string.charAt(i)){
+              medio=true}
     }
+      if (medio == true){
+        objeto[string.charAt(i)] = objeto[string.charAt(i)]+1
+      } else objeto[string.charAt(i)]=1
+    
   } return objeto
 }
 
 
-function capToFront(s) {
+function capToFront(string) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var a =''
+  var b=''
+  for (let i=0;i<string.length;i++){
+    if(string.charAt(i) === string.charAt(i).toUpperCase()){
+      a=a+string.charAt(i)
+    } else b=b+string.charAt(i)
+  }
+  return a+b
+
 }
 
 
@@ -47,6 +61,21 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  var palabras = []
+  var palabra =''
+  var salida = ''
+  for (let i=0;i<str.length;i++){
+    if (str.charAt(i) == ' '){
+      palabras.push(palabra)
+    } else palabra=palabra + str.charAt(i)
+  }
+  for (let j=0;j<palabras.length;j++){
+    for (let k=palabras[j].length;k>=0;k--){
+      salida=salida+palabras[j].charAt(k)
+    }
+    return salida 
+  }
+
 } 
 
 
@@ -55,6 +84,12 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  var invertir = numero.toString().split("").reverse().join("")
+  var invertido = Number(invertir)
+  if (numero === invertido){
+    return 'Es capicua'
+  }
+  return 'No es capicua'
 }
 
 
@@ -62,6 +97,13 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  var frase = ''
+  for (let i=0;i<cadena.length;i++){
+    if (cadena.charAt(i)!== 'a' && cadena.charAt(i)!=='b' && cadena.charAt(i)!=='c'){
+      frase = frase + cadena.charAt(i)
+    }
+  } return frase
+  
 }
 
 
